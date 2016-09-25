@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                tools:context=".MainActivity">
+
+   <TextView
+         android:id="@+id/label"
+         android:text="Position"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         />
+
+   <TextView
+         android:id="@+id/latitudeText"
+         android:text="-23.564345"
+         android:layout_width="100dip"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/label"
+         android:paddingLeft="5dip"
+         />
+
+   <TextView
+         android:id="@+id/longitudeText"
+         android:text="-23.564345"
+         android:layout_width="100dip"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/latitudeText"
+         />
+
+   <Button
+         android:id="@+id/buttonStopStart"
+         android:layout_width="120dip"
+         android:layout_height="20dip"
+         android:layout_marginTop="0dp"
+         android:paddingTop="0dp"
+         android:textSize="10sp"
+         android:layout_toRightOf="@+id/longitudeText"
+         android:text="Stop"
+         android:onClick="onStartStop"
+         />
+
+   <LinearLayout
+         android:id="@+id/mapsLayout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/buttonStopStart"
+         android:weightSum="100"
+         android:orientation="vertical"
+         android:background="#00ff00"
+         >
+
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="50"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            >
+
+         <RelativeLayout
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_weight="50"
+               android:layout_gravity="center_horizontal"
+               >
+
+            <TextView
+                  android:id="@+id/googleLabel"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="left"
+                  android:text="Google Maps"
+                  android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+            <ImageView
+                  android:id="@+id/googleImg"
+                  android:layout_below="@+id/googleLabel"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/icon"
+            />
+         </RelativeLayout>
+
+         <RelativeLayout
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_weight="50"
+               android:layout_gravity="center_horizontal"
+               >
+
+            <TextView
+                  android:id="@+id/mapQuestLabel"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="left"
+                  android:text="MapQuest"
+                  android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <ImageView
+                  android:id="@+id/mapQuestImg"
+                  android:layout_below="@+id/mapQuestLabel"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/icon"/>
+         </RelativeLayout>
+      </LinearLayout>
+
+      <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="50"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:background="#00ff00"
+            >
+
+         <RelativeLayout
+               android:id="@+id/spatiaLayout"
+               android:layout_width="0dip"
+               android:layout_height="match_parent"
+               android:layout_weight="50"
+               android:layout_gravity="center_horizontal"
+               >
+
+            <Spinner
+                  android:id="@+id/spatiaLabelSpinner"
+                  android:layout_width="match_parent"
+                  android:layout_height="32dip"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <StackView
+                  android:id="@+id/spatiaLiteStack"
+                  android:layout_below="@+id/spatiaLabelSpinner"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:animateLayoutChanges="true"
+                  />
+         </RelativeLayout>
+
+         <RelativeLayout
+               android:layout_width="0dip"
+               android:layout_height="match_parent"
+               android:layout_weight="50"
+               android:layout_gravity="center_horizontal"
+               >
+
+            <TextView
+                  android:id="@+id/postgisLabel"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="left"
+                  android:text="PostGIS"
+                  android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <ImageView
+                  android:id="@+id/PostGisImg"
+                  android:layout_below="@+id/postgisLabel"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/icon"/>
+         </RelativeLayout>
+      </LinearLayout>
+   </LinearLayout>
+
+</RelativeLayout>

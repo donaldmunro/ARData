@@ -1,0 +1,16 @@
+*~
+*.org
+*.bak
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+build
+/captures
+workspace.xml
+.keystore/
+keystore/
+/local.properties
+/.idea/workspace.xml
+

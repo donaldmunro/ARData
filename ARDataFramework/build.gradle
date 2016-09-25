@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+   compileSdkVersion 21
+   buildToolsVersion "22.0.1"
+
+   defaultConfig {
+//      applicationId "to.augmented.reality.android.test"
+      minSdkVersion 16
+      targetSdkVersion 22
+      versionCode 1
+      versionName "1.0"
+   }
+   sourceSets {
+            androidTest.setRoot('test')
+            main {
+                manifest.srcFile 'AndroidManifest.xml'
+                java.srcDirs = ['src']
+                jniLibs.srcDirs = ['libs']
+                //jni.srcDirs = ['jni']
+                jni.srcDirs = []
+                resources.srcDirs = ['src']
+                aidl.srcDirs = ['src']
+                renderscript.srcDirs = ['src']
+                res.srcDirs = ['res']
+                assets.srcDirs = ['assets']
+            }
+      test { java.srcDirs = ['test'] }
+   }
+   buildTypes {
+      release {
+         minifyEnabled false
+         proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      }
+   }
+   compileOptions {
+      sourceCompatibility JavaVersion.VERSION_1_7
+      targetCompatibility JavaVersion.VERSION_1_7
+   }
+//   testOptions { unitTests.returnDefaultValues = true }
+    packagingOptions {
+        exclude 'META-INF/services/java.sql.Driver'
+    }
+}
+
+dependencies {
+   compile fileTree(dir: 'lib', include: ['*.jar'])
+   compile 'org.postgresql:postgresql:9.4-1201-jdbc41'
+   compile files('lib/jsqlparser-0.9.4.jar')
+   compile files('lib/sqljdbc4-4.0.jar')
+   compile 'net.sourceforge.jtds:jtds:1.3.1'
+   compile 'com.vividsolutions:jts:1.13'
+   //    testCompile "org.robolectric:robolectric:2.4"
+   //    testCompile 'org.robolectric:robolectric:3.0-rc2'
+   //    testCompile 'org.robolectric:robolectric-shadows:3.0-rc3'
+    testCompile "org.robolectric:robolectric:3.0"
+//    testCompile "org.robolectric:robolectric:3.1-SNAPSHOT"
+//   testCompile 'org.robolectric:robolectric-shadows:3.0'
+   testCompile 'junit:junit:4.12'
+}

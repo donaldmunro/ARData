@@ -1,0 +1,80 @@
+prefix : <http://augmented.reality.to/semantic/owl#>
+
+PREFIX afn: <http://jena.hpl.hp.com/ARQ/function#>
+PREFIX fn: <http://www.w3.org/2005/xpath-functions#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX gml: <http://www.opengis.net/ont/gml#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX par: <http://parliament.semwebcentral.org/parliament#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX units: <http://www.opengis.net/def/uom/OGC/1.0/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?name ?position ?dist
+WHERE 
+{
+  ?L a :Location .
+  ?L :hasWGS84Geolocation ?geom .
+  ?geom geo:asWKT ?position .
+  ?L rdfs:label ?name .
+  BIND (geof:distance(?position, "POINT(-34.00931 25.6685)"^^geo:wktLiteral, units:metre) as ?dist)
+  FILTER (geof:distance(?position, "POINT(-34.00931 25.6685 )"^^geo:wktLiteral, units:metre) < 1000) 
+}
+ORDER BY ?dist
+
+PREFIX fn: <http://www.w3.org/2005/xpath-functions#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX gml: <http://www.opengis.net/ont/gml#>
+PREFIX units: <http://www.opengis.net/def/uom/OGC/1.0/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+prefix : <http://augmented.reality.to/semantic/owl#>
+SELECT DISTINCT ?name ?position
+WHERE {
+   ?L a :Location .
+   ?L :hasWGS84Geolocation ?geom .
+   ?geom geo:asWKT ?position .
+   ?L rdfs:label ?name .
+
+FILTER (geof:distance(?position, "POINT(-34.000000 25.600000)"^^geo:wktLiteral, units:metre) < 1000.000000)
+ }
+ORDER BY ?name
+
+PREFIX fn: <http://www.w3.org/2005/xpath-functions#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX sf: <http://www.opengis.net/ont/sf#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX gml: <http://www.opengis.net/ont/gml#>
+PREFIX units: <http://www.opengis.net/def/uom/OGC/1.0/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+prefix : <http://augmented.reality.to/semantic/owl#>
+
+
+SELECT DISTINCT ?name ?position ?altitude
+WHERE
+{
+   ?L a :Location .
+   ?L :hasWGS84Geolocation ?geom .
+   ?geom geo:asWKT ?position .
+   ?L rdfs:label ?name .
+   ?L :locationAltitude ?altitude
+   FILTER (?altitude >= 100)
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="encoding_options">
+        <item>XML</item>
+        <item>TSV (Tab Separated Values)</item>
+        <item>CSV (Comma Separated Values)</item>
+        <item>TURTLE</item>
+        <item>RDFXML</item>
+        <item>N-Triples</item>
+    </string-array>
+   <string-array name="database_options">
+      <item>PostGres</item>
+      <item>SQL Server</item>
+   </string-array>
+</resources>

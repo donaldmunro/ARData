@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+   <EditText
+         android:id="@+id/editTextQuery"
+         android:layout_width="match_parent"
+         android:layout_height="300dp"
+         android:inputType="textMultiLine|textFilter"
+         android:ems="10"
+         android:layout_gravity="center_horizontal"
+         android:layout_weight="58"
+         android:maxHeight="0dp"
+         android:textIsSelectable="true"
+         android:hint="@string/query_hint"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentLeft="true"
+         />
+
+    <Spinner
+         android:id="@+id/spinnerMethod"
+         android:layout_height="wrap_content"
+         android:layout_width="150dp"
+         android:prompt="@string/encoding_method_hint"
+         android:contentDescription="@string/encoding_method_hint"
+         android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+         android:drawSelectorOnTop="true"
+         android:entries="@array/method_options"
+         android:layout_below="@id/editTextQuery"
+    />
+        <Spinner
+         android:id="@+id/spinnerEncoding"
+         android:layout_height="wrap_content"
+         android:layout_width="150dp"
+         android:prompt="@string/encoding_spinner_hint"
+         android:contentDescription="@string/encoding_spinner_hint"
+         android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+         android:drawSelectorOnTop="true"
+         android:entries="@array/encoding_options"
+         android:layout_below="@id/editTextQuery"
+         android:layout_toRightOf="@id/spinnerMethod"
+    />
+   <!--android:spinnerMode="dropdown"-->
+
+   <Button
+         android:id="@+id/buttonExecute"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="26"
+         android:text="@string/execute_query"
+         android:layout_below="@id/editTextQuery"
+         android:layout_toRightOf="@id/spinnerEncoding"
+   />
+
+
+
+</RelativeLayout>

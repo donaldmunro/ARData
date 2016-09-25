@@ -1,0 +1,20 @@
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT * WHERE {
+?s a dbo:Place .
+?s geo:lat ?lat .
+?s geo:long ?long .
+FILTER ( ?long >  -73.985428 && ?long < -73.985417 && ?lat > 40.748317 && ?lat < 40.748817)
+} 
+LIMIT 100
+
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT * WHERE {
+?s a dbo:Place .
+?s geo:lat ?lat .
+?s geo:long ?long .
+FILTER ( bif:st_intersects (bif:st_point (?long, ?lat), bif:st_point (-73.999697, 40.748806), 0.5))
+} 
+LIMIT 100
+

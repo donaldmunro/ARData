@@ -1,0 +1,1 @@
+SELECT description AS col0,image AS col1 FROM location l  INNER JOIN images i  ON l.location_id = i.location_id WHERE MbrWithin(Transform(wgs84_location, 25832), BuildCircleMbr(X(Transform(MakePoint(25.668501, -34.009327, 4326), 25832)), Y(Transform(MakePoint(25.668501, -34.009327, 4326), 25832)), 1000.000000, 25832));

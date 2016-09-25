@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+   compileSdkVersion 19
+   buildToolsVersion "22.0.1"
+
+   defaultConfig {
+      applicationId "to.augmented.reality.android.jdbctest"
+      minSdkVersion 16
+      targetSdkVersion 22
+      versionCode 1
+      versionName "1.0"
+   }
+   sourceSets {
+      main {
+         manifest.srcFile 'AndroidManifest.xml'
+         java.srcDirs = ['src']
+         jniLibs.srcDirs = ['libs']
+         //jni.srcDirs = ['jni']
+         jni.srcDirs = []
+         resources.srcDirs = ['src']
+         aidl.srcDirs = ['src']
+         renderscript.srcDirs = ['src']
+         res.srcDirs = ['res']
+         assets.srcDirs = ['assets']
+      }
+   }
+   buildTypes {
+      release {
+         minifyEnabled false
+         proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      }
+   }
+   compileOptions {
+      sourceCompatibility JavaVersion.VERSION_1_7
+      targetCompatibility JavaVersion.VERSION_1_7
+   }
+
+   packagingOptions {
+      exclude 'META-INF/services/java.sql.Driver'
+   }
+}
+
+dependencies {
+   compile fileTree(dir: 'libs', include: ['*.jar'])
+   compile project(':ARDataFramework')
+}

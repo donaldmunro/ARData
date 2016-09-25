@@ -1,0 +1,7 @@
+<resources>
+   <string name="app_name">JdbcTest</string>
+
+   <string name="hello_world">Hello world!</string>
+   <string name="action_settings">Settings</string>
+   <string name="tab">\u0009</string>
+</resources>

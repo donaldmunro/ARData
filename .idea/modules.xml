@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ARData.iml" filepath="$PROJECT_DIR$/ARData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ARDataFramework/ARDataFramework.iml" filepath="$PROJECT_DIR$/ARDataFramework/ARDataFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FacadeTest/FacadeTest.iml" filepath="$PROJECT_DIR$/FacadeTest/FacadeTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JdbcTest/JdbcTest.iml" filepath="$PROJECT_DIR$/JdbcTest/JdbcTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapTest/MapTest.iml" filepath="$PROJECT_DIR$/MapTest/MapTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SparQLTest/SparQLTest.iml" filepath="$PROJECT_DIR$/SparQLTest/SparQLTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tiles/Tiles.iml" filepath="$PROJECT_DIR$/Tiles/Tiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vanillahttptest/vanillahttptest.iml" filepath="$PROJECT_DIR$/vanillahttptest/vanillahttptest.iml" />
+    </modules>
+  </component>
+</project>

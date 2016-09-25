@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":SparQLTest" external.linked.project.path="$MODULE_DIR$/../SparQLTest" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="ARData" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":SparQLTest" />
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="SELECTED_TEST_ARTIFACT" value="_android_test_" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <option name="SOURCE_GEN_TASK_NAME" value="generateDebugSources" />
+        <option name="ASSEMBLE_TEST_TASK_NAME" value="assembleDebugAndroidTest" />
+        <option name="COMPILE_JAVA_TEST_TASK_NAME" value="compileDebugAndroidTestSources" />
+        <option name="TEST_SOURCE_GEN_TASK_NAME" value="generateDebugAndroidTestSources" />
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../SparQLTest/res" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/classes/debug" />
+    <output-test url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/classes/androidTest/debug" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../SparQLTest">
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/source/r/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/source/aidl/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/source/rs/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/res/rs/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/res/generated/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/source/r/androidTest/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/source/aidl/androidTest/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/source/rs/androidTest/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/res/rs/androidTest/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/build/generated/res/generated/androidTest/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/debug/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/debug/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/debug/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/debug/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/debug/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/debug/jni" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/debug/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/androidTest/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/androidTest/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/androidTest/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/androidTest/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/androidTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/androidTest/jni" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../SparQLTest/src/androidTest/rs" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/assets" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/bundles" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/coverage-instrumented-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/dependency-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/dex" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/dex-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/incremental" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/jacoco" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/javaResources" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/libs" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/lint" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/manifests" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/ndk" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/pre-dexed" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/proguard" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/res" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/rs" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/intermediates/symbols" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/outputs" />
+      <excludeFolder url="file://$MODULE_DIR$/../SparQLTest/build/tmp" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="ARDataFramework" exported="" />
+  </component>
+</module>
